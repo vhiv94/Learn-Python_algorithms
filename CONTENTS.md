@@ -30,3 +30,4 @@
 ### Ch3: Big-O Analysis
 
 1. Big O Notation
+2. O(n) - Order 'n'
