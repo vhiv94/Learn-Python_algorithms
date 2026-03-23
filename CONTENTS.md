@@ -17,3 +17,6 @@
 5. Non-linear Growth
 6. Non-linear Growth
 7. Logarithms
+8. Logarithm Quiz
+9. Logarithm Quiz
+10. Logarithm Quiz
