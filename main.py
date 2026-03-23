@@ -1,4 +1,4 @@
-from lessons.Ch2.L14 import submit_cases, test
+from lessons.Ch2.L15 import submit_cases, test
 
 def main():
     passed = 0
