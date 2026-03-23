@@ -11,3 +11,6 @@
 ### Ch2: Math
 
 1. Exponents
+2. Exponent Quiz
+3. Exponent Quiz
+4. Exponents Grow
