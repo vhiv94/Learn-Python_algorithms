@@ -32,3 +32,5 @@
 1. Big O Notation
 2. O(n) - Order 'n'
 3. O(n^2) - Order “N Squared”
+4. N^2 Quiz
+5. N^2 Quiz

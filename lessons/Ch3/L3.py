@@ -1,4 +1,6 @@
 def does_name_exist(first_names: list[str], last_names: list[str], full_name: str)  -> bool:
+    # return full_name in list(map(lambda first: list(map(lambda last: f"{first} {last}", last_names)), first_names))
+
     for first in first_names:
         for last in last_names:
             if f"{first} {last}" == full_name:
@@ -7,6 +9,7 @@ def does_name_exist(first_names: list[str], last_names: list[str], full_name: st
 
 
 run_cases = [
+    (3, 3, "bob500 smith1", False),
     (100, 100, "bob0 gonzalez0", True),
     (500, 500, "maria1 smith1", True),
 ]
