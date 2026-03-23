@@ -23,3 +23,4 @@
 11. Factorials
 12. Factorial Quiz
 13. Factorial Quiz
+14. Exponential Decay
