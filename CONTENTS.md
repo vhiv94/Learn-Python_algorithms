@@ -40,3 +40,5 @@
 9. Constants Quiz
 10. Constants Quiz
 11. Order 1
+12. Order Log N
+13. Name Count
