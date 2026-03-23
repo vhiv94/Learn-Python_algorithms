@@ -21,3 +21,5 @@
 9. Logarithm Quiz
 10. Logarithm Quiz
 11. Factorials
+12. Factorial Quiz
+13. Factorial Quiz
