@@ -24,3 +24,4 @@
 12. Factorial Quiz
 13. Factorial Quiz
 14. Exponential Decay
+15. Logarithmic Scale
