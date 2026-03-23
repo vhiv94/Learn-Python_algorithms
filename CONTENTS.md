@@ -14,3 +14,6 @@
 2. Exponent Quiz
 3. Exponent Quiz
 4. Exponents Grow
+5. Non-linear Growth
+6. Non-linear Growth
+7. Logarithms
