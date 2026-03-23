@@ -25,3 +25,4 @@
 13. Factorial Quiz
 14. Exponential Decay
 15. Logarithmic Scale
+16. Mean and Median
