@@ -34,3 +34,4 @@
 3. O(n^2) - Order “N Squared”
 4. N^2 Quiz
 5. N^2 Quiz
+6. O(nm)

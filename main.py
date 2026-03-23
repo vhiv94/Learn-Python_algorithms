@@ -1,7 +1,9 @@
 import time
-from lessons.Ch3.L3 import submit_cases, test
+import random
+from lessons.Ch3.L6 import submit_cases, test
 
 def main():
+    random.seed(1)
     passed = 0
     failed = 0
     for test_case in submit_cases:
