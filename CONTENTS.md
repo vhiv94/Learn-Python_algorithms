@@ -31,3 +31,4 @@
 
 1. Big O Notation
 2. O(n) - Order 'n'
+3. O(n^2) - Order “N Squared”
