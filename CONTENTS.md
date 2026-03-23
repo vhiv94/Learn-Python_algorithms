@@ -6,3 +6,4 @@
 2. Find Minimum
 3. What is an Algorithm?
 4. What is an Algorithm?
+5. Simple Algorithms

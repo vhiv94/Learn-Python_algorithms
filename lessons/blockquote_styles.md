@@ -13,3 +13,7 @@ info
 <blockquote style="border-left: 5px solid #33e865; padding: 5px 10px; margin: 10px auto">
 tips
 </blockquote>
+
+<blockquote style="border-left: 5px solid #6c7db0; padding: 5px 10px; margin: 10px auto">
+notes
+</blockquote>
