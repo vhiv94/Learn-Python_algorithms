@@ -26,3 +26,7 @@
 14. Exponential Decay
 15. Logarithmic Scale
 16. Mean and Median
+
+### Ch3: Big-O Analysis
+
+1. Big O Notation
