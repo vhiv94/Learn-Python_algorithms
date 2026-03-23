@@ -1,6 +1,6 @@
 import time
 import random
-from lessons.Ch3.L6 import submit_cases, test
+from lessons.Ch3.L11 import submit_cases, test
 
 def main():
     random.seed(1)
