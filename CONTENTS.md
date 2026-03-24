@@ -48,3 +48,5 @@
 1. Sorting Algorithms
 2. Bubble Sort
 3. Bubble Sort Big O
+4. Bubble Sort Big O
+5. Why Bubble Sort?
