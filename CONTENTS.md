@@ -42,3 +42,7 @@
 11. Order 1
 12. Order Log N
 13. Name Count
+
+### Ch4: Sorting Algorithms
+
+1. Sorting Algorithms
