@@ -46,3 +46,4 @@
 ### Ch4: Sorting Algorithms
 
 1. Sorting Algorithms
+2. Bubble Sort
