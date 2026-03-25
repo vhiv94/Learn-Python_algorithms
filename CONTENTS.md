@@ -55,3 +55,5 @@
 8. Why Merge Sort?
 9. Why Merge Sort?
 10. Insertion Sort
+11. Insertion Sort Big O
+12. Insertion Sort Big O
