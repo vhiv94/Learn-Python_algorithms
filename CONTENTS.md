@@ -57,3 +57,5 @@
 10. Insertion Sort
 11. Insertion Sort Big O
 12. Insertion Sort Big O
+13. Why use Insertion Sort?
+14. Why use Insertion Sort?
