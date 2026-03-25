@@ -62,3 +62,5 @@
 15. Quick Sort
 16. Quick Sort Big O
 17. Quick Sort Big O
+18. Fixing Quick Sort
+19. Fixing Quick Sort
