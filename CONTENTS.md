@@ -66,3 +66,4 @@
 19. Fixing Quick Sort
 20. Why Use Quick Sort?
 21. Why Use Quick Sort?
+22. Selection Sort
