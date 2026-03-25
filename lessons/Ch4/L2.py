@@ -6,9 +6,7 @@ def bubble_sort(nums: list[int]) -> list[int]:
         for i in range(1, end):
             if nums[i-1] > nums[i]:
                 swapping = True
-                temp = nums[i]
-                nums[i] = nums[i-1]
-                nums[i-1] = temp
+                nums[i], nums[i-1] = nums[i-1], nums[i]
         end -= 1
     return nums
 
