@@ -60,3 +60,5 @@
 13. Why use Insertion Sort?
 14. Why use Insertion Sort?
 15. Quick Sort
+16. Quick Sort Big O
+17. Quick Sort Big O
