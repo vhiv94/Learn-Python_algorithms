@@ -64,3 +64,5 @@
 17. Quick Sort Big O
 18. Fixing Quick Sort
 19. Fixing Quick Sort
+20. Why Use Quick Sort?
+21. Why Use Quick Sort?
