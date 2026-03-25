@@ -52,3 +52,5 @@
 5. Why Bubble Sort?
 6. Merge Sort
 7. Merge Sort Big O
+8. Why Merge Sort?
+9. Why Merge Sort?
