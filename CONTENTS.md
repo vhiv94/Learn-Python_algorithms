@@ -71,3 +71,4 @@
 ### Ch5: Exponential Time
 
 1. Polynomial vs. Exponential
+2. Polynomial Time = P
