@@ -72,3 +72,5 @@
 
 1. Polynomial vs. Exponential
 2. Polynomial Time = P
+3. Reduction to P
+4. Order K^N – Exponential
