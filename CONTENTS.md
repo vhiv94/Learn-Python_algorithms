@@ -74,3 +74,8 @@
 2. Polynomial Time = P
 3. Reduction to P
 4. Order K^N – Exponential
+5. Big O Categories Review
+6. Complexity Quiz
+7. Complexity Quiz
+8. Complexity Quiz
+9. Complexity Quiz
