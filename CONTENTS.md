@@ -67,3 +67,7 @@
 20. Why Use Quick Sort?
 21. Why Use Quick Sort?
 22. Selection Sort
+
+### Ch5: Exponential Time
+
+1. Polynomial vs. Exponential
