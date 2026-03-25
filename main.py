@@ -1,6 +1,6 @@
-import time
+# import time
 import random
-from lessons.Ch4.L2 import submit_cases, test
+from lessons.Ch4.L6 import submit_cases, test
 
 
 def main():
@@ -8,14 +8,14 @@ def main():
     passed = 0
     failed = 0
     for test_case in submit_cases:
-        start = time.time()
+        # start = time.time()
         correct = test(*test_case)
-        execution_time_ms = round(1000 * (time.time() - start), 3)
+        # end = time.time()
+        # print(f'executed in {round(1000 * (end - start), 3)}ms')
         if correct:
             passed += 1
         else:
             failed += 1
-        print(f'executed in {execution_time_ms}ms')
     if failed == 0:
         print("============= PASS ==============")
     else:

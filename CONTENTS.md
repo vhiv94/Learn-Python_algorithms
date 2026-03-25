@@ -50,3 +50,4 @@
 3. Bubble Sort Big O
 4. Bubble Sort Big O
 5. Why Bubble Sort?
+6. Merge Sort
