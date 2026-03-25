@@ -1,33 +1,32 @@
 import time
 
 
-def merge_sort(nums: list[int]) -> list[int]:
-    if len(nums) < 2:
-        return nums
-    A: list[int] = nums[:len(nums)//2]
-    B: list[int] = nums[len(nums)//2:]
-    A = merge_sort(A)
-    B = merge_sort(B)
-    return merge(A, B)
+def merge_sort(arr: list[int]) -> list[int]:
+    ## base case
+    if len(arr) < 2:
+        return arr
+    
+    ## split using recursion
+    A = merge_sort(arr[:len(arr)//2])
+    B = merge_sort(arr[len(arr)//2:])
 
-
-def merge(first: list[int], second: list[int]) -> list[int]:
+    ## then merge
     final: list[int] = []
     i: int = 0
     j: int = 0
     while True:
-        if first[i] < second[j]:
-            final.append(first[i])
+        if A[i] < B[j]:
+            final.append(A[i])
             i += 1
         else:
-            final.append(second[j])
+            final.append(B[j])
             j += 1
 
-        if i == len(first):
-            final.extend(second[j:])
+        if i == len(A):
+            final.extend(B[j:])
             break
-        elif j == len(second):
-            final.extend(first[i:])
+        elif j == len(B):
+            final.extend(A[i:])
             break
     return final
 
