@@ -1,22 +1,24 @@
 class Queue:
     def __init__(self, items: list[any] = []) -> None:
         self.items = items.copy()
+        self.end = 0
 
     def push(self, item: any) -> None:
-        self.items.insert(0, item)
+        self.items.append(item)
 
     def pop(self) -> any:
         if not self.items:
             return None
-        item = self.items[-1]
-        del self.items[-1]
+        item = self.items[self.end]
+        self.items[self.end] = None
+        self.end += 1
         return item 
        
     def peek(self) -> any:
-        return self.items[-1] if self.items else None
+        return self.items[self.end] if self.items else None
     
     def size(self) -> int:
-        return len(self.items)
+        return len(self.items) - self.end
     
     def reset(self) -> None:
         self.items.clear()
@@ -28,4 +30,4 @@ class Queue:
         return item
 
     def __repr__(self):
-        return f"[{', '.join(self.items)}]"
+        return f"[{', '.join(list(filter(lambda item: item is not None, self.items)))}]"
