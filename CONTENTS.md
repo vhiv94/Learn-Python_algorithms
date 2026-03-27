@@ -96,3 +96,5 @@
 2. Stack Speed
 3. Stack Speed
 4. Pop and Peek
+5. Stack Review
+6. Stack Review
