@@ -107,3 +107,4 @@
 3. Queue Speed
 4. Queue Speed
 5. Queue Speed
+6. Matchmaking Queue

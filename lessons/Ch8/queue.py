@@ -20,3 +20,12 @@ class Queue:
     
     def reset(self) -> None:
         self.items.clear()
+    
+    def search_and_remove(self, item):
+        if item not in self.items:
+            return None
+        self.items.remove(item)
+        return item
+
+    def __repr__(self):
+        return f"[{', '.join(self.items)}]"
