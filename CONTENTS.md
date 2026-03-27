@@ -93,3 +93,5 @@
 ### Ch7: Stacks
 
 1. Stacks
+2. Stack Speed
+3. Stack Speed
