@@ -1,6 +1,6 @@
 # import time
 import time
-from lessons.Ch7.L4 import submit_cases, test
+from lessons.Ch7.L7 import submit_cases, test
 
 
 def main():
