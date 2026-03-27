@@ -108,3 +108,9 @@
 4. Queue Speed
 5. Queue Speed
 6. Matchmaking Queue
+
+### Ch9: Linked Lists
+
+1. Linked Lists
+2. Linked List vs. List
+3. Linked List vs. List

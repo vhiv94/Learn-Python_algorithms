@@ -1,16 +1,15 @@
 # import time
 import time
-from lessons.Ch8.L6 import submit_cases, test
-from lessons.Ch8.queue import Queue
-
+from lessons.Ch9.L1 import submit_cases, test
+from lessons.Ch9.linked_list import Node
 
 def main():
     passed = 0
     failed = 0
-    queue = Queue()
+    linked_list = Node("Llewelyn Moss")
     for test_case in submit_cases:
         start = time.time()
-        correct = test(queue, *test_case)
+        correct = test(linked_list, *test_case)
         end = time.time()
         print(f'executed in {round(1000 * (end - start), 3)}ms')
         if correct:
