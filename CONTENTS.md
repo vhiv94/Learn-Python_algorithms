@@ -104,3 +104,6 @@
 
 1. What is a Queue
 2. Queue Class 
+3. Queue Speed
+4. Queue Speed
+5. Queue Speed
