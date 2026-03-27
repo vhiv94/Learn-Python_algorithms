@@ -89,3 +89,7 @@
 4. Lists
 5. Lists Quiz
 6. Lists Quiz
+
+### Ch7: Stacks
+
+1. Stacks
