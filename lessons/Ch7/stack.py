@@ -1,6 +1,6 @@
 class Stack:
     def __init__(self, items: list[any] = []) -> None:
-        self.items = items
+        self.items = items.copy()
 
     def push(self, item: any) -> None:
         self.items.append(item)
@@ -18,6 +18,6 @@ class Stack:
         top = self.items[-1]
         del self.items[-1]
         return top
-    
-    def clear(self) -> None:
+
+    def reset(self) -> None:
         self.items.clear()

@@ -78,8 +78,6 @@ def test(operations, expected_output, expected_name_at_top):
         print(f"Actual last added name: {name_at_top}")
         name_pass = name_at_top == expected_name_at_top
 
-    stack.clear()
-
     if size_pass and name_pass:
         print("Pass")
         return True

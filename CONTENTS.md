@@ -103,3 +103,4 @@
 ### Ch8: Queues
 
 1. What is a Queue
+2. Queue Class 
