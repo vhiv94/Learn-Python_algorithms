@@ -79,3 +79,8 @@
 7. Complexity Quiz
 8. Complexity Quiz
 9. Complexity Quiz
+10. Exponential Growth Sequences
+
+### Ch6: Intro to Data Structures
+
+1. Intro to Data Structures
