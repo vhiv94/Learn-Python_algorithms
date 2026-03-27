@@ -86,3 +86,4 @@
 1. Intro to Data Structures
 2. What Are Data Structures?
 3. What Are Data Structures?
+4. Lists
