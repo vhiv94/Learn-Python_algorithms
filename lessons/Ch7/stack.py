@@ -8,5 +8,11 @@ class Stack:
     def size(self) -> int:
         return len(self.items)
     
+    def peek(self) -> any:
+        return self.items[-1] if self.items else None
+    
+    def pop(self) -> any:
+        return self.items.pop() if self.items else None
+    
     def clear(self) -> None:
         self.items.clear()

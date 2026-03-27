@@ -95,3 +95,4 @@
 1. Stacks
 2. Stack Speed
 3. Stack Speed
+4. Pop and Peek
