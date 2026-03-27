@@ -84,3 +84,5 @@
 ### Ch6: Intro to Data Structures
 
 1. Intro to Data Structures
+2. What Are Data Structures?
+3. What Are Data Structures?
