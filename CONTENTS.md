@@ -99,3 +99,7 @@
 5. Stack Review
 6. Stack Review
 7. Using a Stack
+
+### Ch8: Queues
+
+1. What is a Queue
