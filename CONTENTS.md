@@ -119,3 +119,5 @@
 6. Add to Head
 7. Linked List Queue
 8. Remove from Head
+9. Linked List Queue Quiz
+10. Linked List Queue Quiz
