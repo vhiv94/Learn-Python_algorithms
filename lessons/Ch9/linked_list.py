@@ -12,7 +12,6 @@ class Node:
     def __repr__(self) -> any:
         return self.val
     
-
 class LinkedList:
     def add_to_head(self, val: any) -> None:
         node = Node(val)
@@ -31,6 +30,23 @@ class LinkedList:
         else:
             self.tail.next = node
             self.tail = node
+
+    def remove_from_head(self) -> Node:
+        if self.head is None:
+            return None
+        old_head = self.head
+        self.head = self.head.next
+        old_head.next = None
+        if self.head is None:
+            self.tail = None
+        return old_head
+
+    def clear(self) -> None:
+        while self.head is not None:
+            next_node = self.head.next
+            self.head.next = None
+            self.head = next_node
+        self.tail = None
 
     def __init__(self, list: list[any] | None = None) -> None:
         if list is None:
@@ -62,3 +78,20 @@ class LinkedList:
         for node in self:
             nodes.append(node.val)
         return " -> ".join(nodes)
+    
+class LLQueue(LinkedList):
+    def add_to_head(self):
+        pass
+
+    def push(self, item: any) -> None:
+        self.add_to_tail(item)
+
+    def pop(self) -> Node:
+        return self.remove_from_head()
+    
+    def peek(self) -> Node:
+        return self.head
+    
+
+llq = LLQueue()
+llq

@@ -118,3 +118,4 @@
 5. Add to Tail
 6. Add to Head
 7. Linked List Queue
+8. Remove from Head
