@@ -54,6 +54,15 @@ class BSTNode:
                 self.val = successor
                 self.left = self.left.delete(successor)
                 return self
+            
+    def preorder(self, order: list[int]) -> list[int]:
+        if self.val is not None:
+            order.append(self.val)
+        if self.left:
+            self.left.preorder(order)
+        if self.right:
+            self.right.preorder(order)
+        return order
 
 
 def print_tree(bst_node):
