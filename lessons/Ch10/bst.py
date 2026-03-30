@@ -1,3 +1,6 @@
+from __future__ import annotations
+
+
 class BSTNode:
     def __init__(self, val: int | None = None) -> None:
         self.left: BSTNode = None
@@ -29,6 +32,28 @@ class BSTNode:
                 self.right = BSTNode(val)
             else:
                 self.right.insert(val)
+
+    def delete(self, val: int) -> BSTNode:
+        if self.val is None:
+            return None
+        elif val < self.val:
+            if self.left:
+                self.left = self.left.delete(val)
+            return self
+        elif val > self.val:
+            if self.right:
+                self.right = self.right.delete(val)
+            return self
+        elif val == self.val:
+            if self.left is None:
+                return self.right
+            elif self.right is None:
+                return self.left
+            else:
+                successor = self.left.get_max()
+                self.val = successor
+                self.left = self.left.delete(successor)
+                return self
 
 
 def print_tree(bst_node):
