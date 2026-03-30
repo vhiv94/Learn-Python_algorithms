@@ -1,13 +1,13 @@
 # import time
 import time
-from lessons.Ch10.L5 import submit_cases, test
+from lessons.Ch10.L7 import submit_cases, test
 
 def main():
     passed = 0
     failed = 0
     for test_case in submit_cases:
         start = time.time()
-        correct = test(test_case)
+        correct = test(*test_case)
         end = time.time()
         print(f'executed in {round(1000 * (end - start), 3)}ms')
         if correct:

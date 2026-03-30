@@ -130,3 +130,4 @@
 4. Binary Trees
 5. Insert Nodes
 6. Insert Review
+7. Min and Max
