@@ -132,3 +132,5 @@
 6. Insert Review
 7. Min and Max
 8. Delete
+9. Deletion Review
+10. Deletion Review
