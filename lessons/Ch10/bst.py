@@ -63,6 +63,15 @@ class BSTNode:
         if self.right:
             self.right.preorder(order)
         return order
+    
+    def postorder(self, order: list) -> list:
+        if self.left:
+            self.left.postorder(order)
+        if self.right:
+            self.right.postorder(order)
+        if self.val:
+            order.append(self.val)
+        return order
 
 
 def print_tree(bst_node):
