@@ -117,3 +117,4 @@
 4. Iterating
 5. Add to Tail
 6. Add to Head
+7. Linked List Queue
