@@ -1,12 +1,12 @@
 # import time
 import time
-from lessons.Ch9.L1 import submit_cases, test
-from lessons.Ch9.linked_list import Node
+from lessons.Ch9.L4 import submit_cases, test
+from lessons.Ch9.linked_list import Node, LinkedList
 
 def main():
     passed = 0
     failed = 0
-    linked_list = Node("Llewelyn Moss")
+    linked_list = LinkedList(Node("Major Marquis Warren"))
     for test_case in submit_cases:
         start = time.time()
         correct = test(linked_list, *test_case)
