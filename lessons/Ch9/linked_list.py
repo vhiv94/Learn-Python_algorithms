@@ -17,6 +17,10 @@ class LinkedList:
     def __init__(self, node: Node | None = None) -> None:
         self.head: Node | None = node
 
+    def add_to_head(self, node: Node) -> None:
+        node.next = self.head
+        self.head = node
+
     def add_to_tail(self, node: Node) -> None:
         if self.head is None:
             self.head = node
