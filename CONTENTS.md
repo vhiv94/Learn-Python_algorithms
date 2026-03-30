@@ -121,3 +121,8 @@
 8. Remove from Head
 9. Linked List Queue Quiz
 10. Linked List Queue Quiz
+
+### Ch10: Binary Trees
+
+1. Trees
+2. Trees
