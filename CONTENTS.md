@@ -149,3 +149,5 @@
 5. Rules
 6. Rotation
 7. Fix Insert
+8. Red-Black Tree Quiz
+9. Red-Black Tree Quiz
