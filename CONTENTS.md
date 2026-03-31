@@ -162,3 +162,4 @@
 6. Get
 7. Hash Map Review
 8. Hash Map Review
+9. Resize
