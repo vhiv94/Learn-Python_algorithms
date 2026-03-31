@@ -147,3 +147,4 @@
 3. Red-Black Tree
 4. Rules
 5. Rules
+6. Rotation
