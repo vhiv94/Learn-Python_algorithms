@@ -151,3 +151,9 @@
 7. Fix Insert
 8. Red-Black Tree Quiz
 9. Red-Black Tree Quiz
+
+### Ch12: Hashmaps
+
+1. Hashmaps
+2. Hashmaps
+3. Hashmaps
