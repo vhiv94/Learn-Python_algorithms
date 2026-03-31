@@ -7,14 +7,35 @@ class HashMap:
 
     def insert(self, key: str, val: User) -> None:
         self.resize()
-        self.hashmap[self.key_to_index(key)] = (key, val)
+        index = self.key_to_index(key)
+        bucket = self.hashmap[index]
+        original_index = index
+        first_iteration = True
+        while bucket is not None and bucket[0] is not key:
+            if not first_iteration and index == original_index:
+                raise Exception("hashmap is full")
+            index += 1
+            index %= len(self.hashmap)
+            first_iteration = False
+            bucket = self.hashmap[index]
+        self.hashmap[index] = (key, val)
 
     def get(self, key: str) -> User:
-        val = self.hashmap[self.key_to_index(key)]
-        if val is None:
-            raise Exception("sorry, key not found") 
-        else:
-            return val[1]
+        index = self.key_to_index(key)
+        bucket = self.hashmap[index]
+        original_index = index
+        first_iteration = True
+        while bucket is not None:
+            if bucket[0] == key:    
+                return bucket[1]    
+            if not first_iteration and index == original_index:
+                raise Exception("sorry, key not found")
+            index += 1
+            index %= len(self.hashmap)
+            first_iteration = False
+            bucket = self.hashmap[index]
+        raise Exception("sorry, key not found")
+
         
     def resize(self) -> None:
         if len(self.hashmap) == 0:
