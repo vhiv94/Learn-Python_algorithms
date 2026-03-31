@@ -159,3 +159,4 @@
 3. Hashmaps
 4. Hash Function
 5. Insert
+6. Get
