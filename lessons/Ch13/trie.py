@@ -22,6 +22,18 @@ class Trie:
         current.setdefault(self.end_symbol, True)
         return self
     
+    def find_matches(self, doc: str) -> set[str]:
+        result = set()
+        for i in range(len(doc)):
+            level = self.root
+            for j in range(i, len(doc)):
+                level = level.get(doc[j])
+                if not level:
+                    break
+                if self.end_symbol in level:
+                    result.add(doc[i:j+1])
+        return result
+    
     def exists(self, word: str) -> bool:
         word.lower()
         current = self.root
@@ -32,14 +44,14 @@ class Trie:
         return current.get(self.end_symbol, False)
 
     def words_with_prefix(self, prefix: str) -> list[str]:
-        words = []
-        current_level = self.root
+        result = []
+        level = self.root
         for char in prefix:
-            current_level = current_level.get(char)  
-            if current_level is None:
-                return words
-        self.search_level(current_level, prefix, words)
-        return words
+            level = level.get(char)  
+            if level is None:
+                return result
+        self.search_level(level, prefix, result)
+        return result
 
     def search_level(self, current_level: dict[str, dict], current_prefix: str, words: list[str]) -> None:
         if current_level.get(self.end_symbol, False):
@@ -53,7 +65,7 @@ class Trie:
     def __repr__(self) -> str:
         return json.dumps(self.root, sort_keys=True, indent=2)
 
-# trie = Trie(["hi", "hello", "help"])
-# trie.exists("hello")
-# words = trie.words_with_prefix("hel")
-# print(words)
+trie = Trie(["hi", "hello", "help"])
+trie.exists("hello")
+words = trie.find_matches("hello, world, help me help you")
+print(words)
