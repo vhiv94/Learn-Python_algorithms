@@ -81,6 +81,16 @@ class BSTNode:
         if self.right:
             self.right.inorder(order)
         return order
+    
+    def exists(self, val: int) -> bool:
+        if val == self.val:
+            return True
+        elif self.left and val < self.val:
+            return self.left.exists(val)
+        elif self.right and val > self.val:
+            return self.right.exists(val)
+        else:
+            return False
 
 def print_tree(bst_node):
     lines = []
