@@ -160,3 +160,5 @@
 4. Hash Function
 5. Insert
 6. Get
+7. Hash Map Review
+8. Hash Map Review
