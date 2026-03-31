@@ -25,12 +25,28 @@ class Trie:
     def find_matches(self, doc: str) -> set[str]:
         result = set()
         for i in range(len(doc)):
-            level = self.root
+            current = self.root
             for j in range(i, len(doc)):
-                level = level.get(doc[j])
-                if not level:
+                current = current.get(doc[j])
+                if not current:
                     break
-                if self.end_symbol in level:
+                if self.end_symbol in current:
+                    result.add(doc[i:j+1])
+        return result
+    
+    def advanced_find_matches(self, doc: str, variations: dict[str, str]) -> set[str]:
+        result = set()
+        for i in range(len(doc)):
+            current = self.root
+            for j in range(i, len(doc)):
+                char = doc[j]
+                if char in variations:
+                    current = current.get(variations[char])
+                else:
+                    current = current.get(char)
+                if not current:
+                    break
+                if self.end_symbol in current:
                     result.add(doc[i:j+1])
         return result
     
