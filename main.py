@@ -1,6 +1,6 @@
 # import time
 import time
-from lessons.Ch12.L4 import submit_cases, test
+from lessons.Ch12.L5 import submit_cases, test
 
 def main():
     passed = 0

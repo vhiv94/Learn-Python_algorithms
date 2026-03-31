@@ -158,3 +158,4 @@
 2. Hashmaps
 3. Hashmaps
 4. Hash Function
+5. Insert
