@@ -35,13 +35,27 @@ class Graph:
         if num_vertices:
             self.add_vertices(num_vertices)
 
-    def add_edge(self, u: int, v: int) -> None:
-        if u < 0 or v < 0:
-            return
-        if u >= self.__num_vertices or v >= self.__num_vertices:
-            self.add_vertices(max(u, v) + 1) 
-        self.graph[u].add(v)
-        self.graph[v].add(u)
+    # def add_edge(self, u: int, v: int) -> None:
+    #     if type(u) is not int or u < 0 or type(v) is not int or v < 0:
+    #         raise ValueError("Vertices must be positive integers")
+    #     if u >= self.__num_vertices or v >= self.__num_vertices:
+    #         self.add_vertices(max(u, v) + 1) 
+    #     self.graph[u].add(v)
+    #     self.graph[v].add(u)
+
+    def add_edge(self, u, v):
+        if u in self.graph:
+            self.graph[u].add(v)
+        else:
+            self.graph[u] = {v}
+        if v in self.graph:
+            self.graph[v].add(u)
+        else:
+            self.graph[v] = {u}
+
+    def add_node(self, u):
+        if u not in self.graph:
+            self.graph[u] = set()
 
     def add_vertices(self, num_vertices: int) -> None:
         if type(num_vertices) is not int or num_vertices <= 0:
@@ -59,6 +73,9 @@ class Graph:
         if u in self.graph and v in self.graph:
             return (v in self.graph[u]) and (u in self.graph[v])
         return False
+    
+    def unconnected_vertices(self) -> list[int]:
+        return list(map(lambda item: item[0], filter(lambda item: not item[1], self.graph.items())))
 
     def __repr__(self) -> str:
         rep = "{\n"
@@ -67,6 +84,7 @@ class Graph:
         rep += "}"
         return rep
 
-# grph = Graph(3)
-# grph.add_edge(2, 3)
-# print(grph)
+grph = Graph(3)
+grph.add_edge(2, 3)
+grph.unconnected_vertices()
+print(grph)

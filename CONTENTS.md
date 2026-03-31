@@ -188,3 +188,4 @@
 6. Representing Graphs
 7. Representing Graphs
 8. Adjacent Nodes
+9. Unconnected Vertices
