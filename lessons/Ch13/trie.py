@@ -29,7 +29,7 @@ class Trie:
             if char not in current:
                 return False
             current = current.get(char)
-        return current.get(self.end_symbol)
+        return current.get(self.end_symbol, False)
     
     def __repr__(self) -> str:
         return json.dumps(trie.root, sort_keys=True, indent=2)
