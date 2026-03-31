@@ -148,3 +148,4 @@
 4. Rules
 5. Rules
 6. Rotation
+7. Fix Insert
