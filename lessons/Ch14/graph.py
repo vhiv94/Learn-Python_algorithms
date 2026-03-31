@@ -50,6 +50,11 @@ class Graph:
             self.graph.setdefault(i, set())
         self.__num_vertices = num_vertices
 
+    def adjacent_nodes(self, node: int) -> set:
+        if node < 0 or node not in self.graph:
+            raise ValueError("node does not yet exist")
+        return self.graph[node]
+
     def edge_exists(self, u: int, v: int) -> bool:
         if u in self.graph and v in self.graph:
             return (v in self.graph[u]) and (u in self.graph[v])
