@@ -165,7 +165,7 @@
 9. Resize
 10. Linear Probing
 
-### Tries
+### Ch13: Tries
 
 1. Tries
 2. Exists
@@ -175,3 +175,4 @@
 6. Find Matches
 7. Find Matches Review
 8. Find Matches Review
+9. Longest Common Prefix

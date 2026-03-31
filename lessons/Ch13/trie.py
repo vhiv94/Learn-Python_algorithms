@@ -34,6 +34,17 @@ class Trie:
                     result.add(doc[i:j+1])
         return result
     
+    def longest_common_prefix(self) -> str:
+        current = self.root
+        prefix = ""
+        while True:
+            children = list(current.keys())
+            if self.end_symbol in children or len(children) != 1: 
+                break
+            prefix += children[0]
+            current = current.get(children[0])
+        return prefix
+    
     def exists(self, word: str) -> bool:
         word.lower()
         current = self.root
@@ -65,7 +76,7 @@ class Trie:
     def __repr__(self) -> str:
         return json.dumps(self.root, sort_keys=True, indent=2)
 
-trie = Trie(["hi", "hello", "help"])
-trie.exists("hello")
-words = trie.find_matches("hello, world, help me help you")
-print(words)
+# trie = Trie(["hi", "hill"])
+# trie.exists("hello")
+# words = trie.longest_common_prefix()
+# print(words)
