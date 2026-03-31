@@ -138,3 +138,4 @@
 12. Postorder Traversal
 13. Inorder Traversal
 14. Node Exists
+15. Height

@@ -91,6 +91,17 @@ class BSTNode:
             return self.right.exists(val)
         else:
             return False
+        
+    def height(self) -> int:
+        left_count = 0
+        right_count = 0
+        if self.val is None:
+            return 0
+        if self.left:
+            left_count = self.left.height()
+        if self.right:
+            right_count = self.right.height()
+        return max(left_count, right_count) + 1
 
 def print_tree(bst_node):
     lines = []
