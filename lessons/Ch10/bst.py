@@ -72,7 +72,15 @@ class BSTNode:
         if self.val:
             order.append(self.val)
         return order
-
+        
+    def inorder(self, order: list) -> list:
+        if self.left:
+            self.left.inorder(order)
+        if self.val:
+            order.append(self.val)
+        if self.right:
+            self.right.inorder(order)
+        return order
 
 def print_tree(bst_node):
     lines = []

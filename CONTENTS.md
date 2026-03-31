@@ -136,3 +136,4 @@
 10. Deletion Review
 11. Preorder Traversal
 12. Postorder Traversal
+13. Inorder Traversal
