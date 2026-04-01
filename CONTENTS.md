@@ -208,3 +208,5 @@
 4. Verify TSP
 5. TSP Review
 6. TSP Review
+7. NP-Complete
+8. NP-Complete
