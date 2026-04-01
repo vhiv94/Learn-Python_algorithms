@@ -218,3 +218,6 @@
 14. NP-Hard
 15. NP-Hard
 16. Prime Factorization
+17. Prime Factoring Review
+18. Prime Factoring Review
+19. Prime Factoring Review
