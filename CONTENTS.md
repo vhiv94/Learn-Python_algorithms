@@ -196,3 +196,6 @@
 2. Complete Graph
 3. Complete Graph
 4. Depth First Search (DFS)
+5. DFS vs. BFS
+6. DFS vs. BFS
+7. DFS vs. BFS
