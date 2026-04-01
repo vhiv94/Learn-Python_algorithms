@@ -127,7 +127,7 @@ submit_cases = run_cases + [
 
 def print_matrix(mat):
     n = len(mat)
-    m = len(mat[0])
+    # m = len(mat[0])
     for i in range(n):
         print(mat[i])
 

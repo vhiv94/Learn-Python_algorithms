@@ -205,3 +205,4 @@
 1. NP
 2. NP
 3. Traveling Salesman Problem
+4. Verify TSP
