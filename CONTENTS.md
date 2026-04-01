@@ -193,3 +193,5 @@
 ### Ch15: BFS and DFS
 
 1. Breadth First Search (BFS)
+2. Complete Graph
+3. Complete Graph
