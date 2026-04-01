@@ -211,3 +211,9 @@
 7. NP-Complete
 8. NP-Complete
 9. Verifying Solutions
+10. Does P Equal NP?
+11. Does P Equal NP?
+12. The Negative Case
+13. The Negative Case
+14. NP-Hard
+15. NP-Hard
