@@ -199,3 +199,8 @@
 5. DFS vs. BFS
 6. DFS vs. BFS
 7. DFS vs. BFS
+
+### Ch16: P vs NP
+
+1. NP
+2. NP
