@@ -210,3 +210,4 @@
 6. TSP Review
 7. NP-Complete
 8. NP-Complete
+9. Verifying Solutions
