@@ -2,7 +2,20 @@ class Graph:
     def __init__(self) -> None:
         self.graph: dict[str, set[str]] = {}
 
-    def breadth_first_search(self, v: int) -> list[str]:
+    def depth_first_search(self, start_vertex: str) -> list[str]:
+        visited = []
+        self.depth_first_search_r(visited, start_vertex)
+        return visited
+
+    def depth_first_search_r(self, visited: list[str], current_vertex: str) -> None:
+        visited.append(current_vertex)
+        neighbors = sorted(self.graph[current_vertex])
+        for city in neighbors:
+            if city in visited:
+                continue
+            self.depth_first_search_r(visited, city)
+
+    def breadth_first_search(self, v: str) -> list[str]:
         visited = []
         queue = [v]
         while queue:

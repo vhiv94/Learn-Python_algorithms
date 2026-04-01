@@ -195,3 +195,4 @@
 1. Breadth First Search (BFS)
 2. Complete Graph
 3. Complete Graph
+4. Depth First Search (DFS)
